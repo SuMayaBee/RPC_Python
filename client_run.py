@@ -21,7 +21,7 @@ from rpc import Client
 def main():
     try:
         # Creating a client that connects to localhost on port 8080
-        client = Client("127.0.0.1", 8080)
+        client = Client("192.168.1.102", 8080)
         
         print("Connected to RPC server!")
         print("Testing various RPC calls...\n")
@@ -59,7 +59,7 @@ def main():
         
     except ConnectionError as e:
         print(f"Failed to connect to server: {e}")
-        print("Make sure the server is running (python examples/server_example.py)")
+        #print("Make sure the server is running (python examples/server_example.py)")
     except Exception as e:
         print(f"Error: {e}")
 

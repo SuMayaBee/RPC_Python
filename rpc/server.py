@@ -21,7 +21,7 @@ class Server:
     - Automatically capture function signatures
     """
     
-    def __init__(self, port: int, host: str = "localhost"):
+    def __init__(self, port: int, host: str = "0.0.0.0"):
         """
         Initialize the RPC server.
         
